@@ -14,26 +14,28 @@ O aplicatie ce permite vizualizarea evenimentelor viitoare realizate de Erasmus 
 
 # Cerinte
 
-Sa aiba mai multe rute (2p)
+**Sa aiba mai multe rute**
 
 Acestea se pot gasi in App Routing.
 
-Sa se foloseasca componente reutilizabile (2p)
+**Sa se foloseasca componente reutilizabile**
 
-Textul din cadrul paginii de add events si NavBar-ul au fost create pentru a fi componente reutilizabile in cadrul paginii.
+NavBar-ul au fost creat pentru a fi o componenta reutilizabila in cadrul fiecarei pagini.
 
-Sa se comunice intre componente (2p)
+**Sa se comunice intre componente**
 
+Textul din cadrul paginii de add events, "Hello, ESNer!" a fost realizat folosind o componenta child.
 
-Rute publice si private (1p)
+**Rute publice si private**
 
  Pagina de adaugare de evenimente poate fi accesata doar in cazul in care utilizatorul este autentificat dupa cum se poate observa in App Routing, accesul lor fiind securizat cu Auth Guard.
 
-Sa fie cel putin o pagina cu un form ( login/register) (2p)
+**Sa fie cel putin o pagina cu un form ( login/register)**
 
 Paginile ce contin forms sunt paginile de Login, Sign Up si Add Event.
 
-Firebase sau orice alt mediu de backend (1p)
+**Firebase sau orice alt mediu de backend**
+
 In proiect este folosit Firebase pentru autentificare si baza de date.
 
  
