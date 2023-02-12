@@ -1,12 +1,17 @@
 # Proiect_angular
 
 #Descriere
+
 O aplicatie ce permite vizualizarea evenimentelor viitoare realizate de Erasmus Student Network(ESN).
 
+
 #Demo
+
 Demo [https://drive.google.com/file/d/1IcQczhV2Ksa6U73w6-x8WM7JwgYPYt7_/view?usp=sharing]
 
+
 #Cerinte
+
 Sa aiba mai multe rute (2p)
 Acestea se pot gasi in App Routing.
 
