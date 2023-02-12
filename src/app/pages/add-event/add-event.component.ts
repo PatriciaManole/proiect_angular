@@ -38,12 +38,13 @@ export class AddEventComponent implements OnInit {
       events= value as Event[];
     });
     this.ev = [...events];
+    console.log(this.ev);
   }
 
   getEvent() {
     return new Promise((resolve, reject) => {
       this.db
-        .list('events')
+        .list('events/upcoming_events')
         .valueChanges()
         .subscribe((value) => {
           resolve(value);

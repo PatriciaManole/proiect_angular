@@ -28,6 +28,7 @@ export class EventsComponent implements OnInit {
     await this.getEvents().then((value) => {
       ev = value as Event[];
     });
+    ev.sort(compareDate);
     this.Events = [...ev];
   }
 
@@ -43,8 +44,21 @@ export class EventsComponent implements OnInit {
   }
 
 }
+
 class Event {
   name: string | undefined;
   description: string | undefined;
-  date: string | undefined;
+  date!: string ;
+}
+
+function compareDate(a: Event, b: Event) {
+  let ev1 = a.date.split('/').reverse();
+  let ev2 = b.date.split('/').reverse();
+
+  for (let i = 0; i < 3; i++) {
+    if (parseInt(ev1[i]) > parseInt(ev2[i])) return 1;
+    else if (parseInt(ev1[i]) < parseInt(ev2[i])) return -1;
+  }
+
+  return 0;
 }
