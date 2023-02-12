@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <app-current-user [user]="user_curr"></app-current-user> 
+    <form
+     [formGroup]="addEventForm"
+    (ngSubmit)="addEvent()" 
+    >
+  
+    <input formControlName="eventName" placeholder="Event Name" />
+    <textarea
+      formControlName="eventDescription"
+      placeholder="Event Description*"
+    >
+    </textarea>
+    <div>
+      <input
+        formControlName="eventDate"
+        matInput
+        [matDatepicker]="picker"
+        placeholder="Date"
+      />
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </div>
+  
+    <button mat-raised-button type="submit">Add Event</button>
+  </form>
+  
+  </div>

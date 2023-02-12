@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div *ngFor="let event of Events">
+      <div >
+            <p>{{event.name}}</p>
+            <p>{{event.description}}</p>
+            <p>{{event.date}}</p>
+      </div>
+    </div>
+  </div>

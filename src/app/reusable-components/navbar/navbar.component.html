@@ -1,0 +1,25 @@
+<!-- <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+/> -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a routerLink="/" class="navbar-brand">Erasmus Student Network</a>
+    </div>
+
+    <div>
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active">
+          <a routerLink="../events">View All Events</a>
+        </li>
+        <li routerLinkActive="active" *ngIf="afAuth.user | async">
+          <a routerLink="../add-event">Add Event</a>
+        </li>
+        <li routerLinkActive="active" *ngIf="afAuth.user | async">
+          <a (click)="logout()" routerLink="./home">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
